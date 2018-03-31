@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class TicTacToe {
 
-  //Scope variables accessed by the entire program\
+  //Scope variables accessed by the entire program
   public String username;
 
   public Scanner input;
@@ -19,7 +19,6 @@ public class TicTacToe {
   public stat char winner;
 
   //Constructor initializes the scanner, and game board using 1D array
-
   public TitTacToe()
   {
     input = new Scanner(System.in);
@@ -33,8 +32,8 @@ public class TicTacToe {
   //Main function consists of mostly function calls
   public static void main(String[] args)
   {
-
-    //initializes gameBoard array to fill up game gameBoard\
+  
+    //initializes gameBoard array to fill up game gameBoard
     TicTacToe gameBoard = new TicTacToe
 
     int turn = 1;
@@ -106,10 +105,10 @@ public class TicTacToe {
     }
   }
 
-  //Displays game board and information
+  //Splash screen for credits
   public void splaceScreen() throws IOException
   {
-    System.out.println("********************************");
+       System.out.println("********************************");
 
        System.out.println("********************************");
 
@@ -141,7 +140,7 @@ public class TicTacToe {
         boolean isValid = false;
 
         //Validates name is none other than alphanumeric and contains
-        //no numbers and special char
+        //no numbers and special chars
         while(!isValid)
         {
             System.out.println("Enter your name that contains only alphanumeric: ");
@@ -364,8 +363,6 @@ public class TicTacToe {
 
    }
 
-
-
    //Checks if there is tie and returns true if tie
    //Returns false if there is a winner
    public boolean checkTie()
@@ -390,10 +387,7 @@ public class TicTacToe {
 
            return false;
 
-
-
-   }
-
+    }
 
    //Function will allow the computer to make a move
    //while also populating the board with the best possible choice
@@ -405,8 +399,6 @@ public class TicTacToe {
        board[move] = 'C';
 
    }
-
-
 
    //Function generates a random number in range 0-8
    //to fill an empty space on the board
